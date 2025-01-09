@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'TriviaSerifBlack';
+    src: url('../fonts/Storm-TriviaSerifBlack.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CoreSansLightItalic';
+    src: url('../fonts/CoreSansNR35Light-Italic.otf') format('opentype');
+}
+
+/* Sayfanın tamamını kapsayan stil */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #fff9ec;
+    flex-direction: column;
+}
+
+/* Logoya özel stil */
+.logo-container {
+    margin-top: -300px;
+}
+
+.logo-container img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+/* İçerik için ek stil */
+.content {
+    max-width: 600px; /* İçeriği genişlikte sabitle */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'TriviaSerifBlack', serif;
+    color: #292a75;
+}
+
+.content p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'CoreSansLightItalic', sans-serif;
+    color: #292a75;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+/* Sosyal medya bölümü */
+.social-media {
+    display: flex;
+    flex-wrap: wrap; /* Taşan ikonlar için yeni satır oluştur */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Sosyal medya ikonları arasındaki düzen */
+.social-media.second-row {
+    margin-top: 13px; /* Üstteki satırla alttaki satır arasındaki boşluğu daralt */
+}
+
+.social-media a {
+    width: 65px; /* Sabit genişlik */
+    text-align: center;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+}
+
+.social-media img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Uzun metinler için */
+.social-media p {
+    margin: 0; /* Alt ve üst boşlukları sıfırla */
+    padding: 0;
+    font-size: 0.75rem; /* Yazı boyutunu küçük tut */
+    line-height: 1.2; /* Metin satır yüksekliğini ayarla */
+    color: #292a75; /* Metin rengi */
+    font-style: normal; /* Yazıyı düz yap */
+}
+
+.social-media p.rehber {
+    line-height: 1.2; /* Rehbere Ekle için daha küçük satır aralığı */
+}
+
+/* Nice to Meet You logosu için stil */
+.nicetomeetyou {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.nicetomeetyou img {
+    width: 150px;
+    height: auto;
+}
+
+/* Sayfanın tamamını aşağı kaydırmak için */
+.container {
+    margin-top: 300px;
+}
+
+/* Dil seçici */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1rem;
+    color: #292a75;
+    z-index: 1000;
+}
+
+.language-selector select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 3px 6px; /* Küçültülmüş iç boşluk */
+    font-size: 0.8rem; /* Daha küçük metin boyutu */
+    border: 1px solid #292a75;
+    border-radius: 5px;
+    background-color: #fff9ec;
+    color: #292a75;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Dil seçici seçenekleri */
+.language-selector select option {
+    background-color: #fff9ec;
+    color: #292a75;
+}
+
+/* Seçili olan dil için özel stil */
+.language-selector select option:checked {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+/* Dil seçici tıklandığında gölge olmamasını sağla */
+.language-selector select:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Masaüstü görünümü için */
+@media (min-width: 768px) {
+    .language-selector {
+        top: 30px;
+        right: 50%;
+        transform: translateX(200px); /* Ortadan sağa kaydır */
+    }
+}

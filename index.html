@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Cape Arnna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dil Seçici -->
+    <div class="language-selector">
+        <select id="language-dropdown" onchange="changeLanguage()">
+          <option value="tr" selected>TR</option>
+    <option value="en">EN</option>
+  
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div class="content">
+            <h1 id="name">Süleyman Emre</h1>
+            <p id="title">Kurumsal İletişim Uzmanı</p>
+
+            <div class="social-media">
+                <a href="rehbere-ekle.vcf" download="rehbere-ekle.vcf" class="instagram">
+                    <img src="images/rehber.svg" alt="Instagram Logo">
+                    <p id="rehber">Rehbere<br>Ekle</p>
+                </a>
+                <a href="mailto:suleyman.emre@melden.com" target="_blank">
+                    <img src="images/mail.svg" alt="Mail Logo">
+                    <p id="email">E-Posta</p>
+                </a>
+                <a href="tel:+90%20538%278%5425" target="_blank">
+                    <img src="images/phone.svg" alt="Phone Logo">
+                    <p id="call">Ara</p>
+                </a>
+                <a href="https://maps.app.goo.gl/ouQMyywxxyQMvb389" target="_blank">
+                    <img src="images/konum.svg" alt="Location Logo">
+                    <p id="location">Konum</p>
+                </a>
+            </div>
+
+            <div class="social-media second-row">
+                <a href="https://www.instagram.com/xocapearnna/" target="_blank" class="instagram">
+                    <img src="images/instagram.svg" alt="Instagram Logo">
+                    <p id="social-instagram">Instagram</p>
+                </a>
+                <a href="https://www.facebook.com/people/XO-Cape-Arnna/61568247226657/" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook Logo">
+                    <p id="social-facebook">Facebook</p>
+                </a>
+                <a href="https://www.youtube.com/@XoCapeArnna" target="_blank">
+                    <img src="images/youtube.svg" alt="YouTube Logo">
+                    <p id="social-youtube">YouTube</p>
+                </a>
+                <a href="https://www.linkedin.com/company/xo-cape-arnna/about/?viewAsMember=true" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn Logo">
+                    <p id="social-linkedin">LinkedIn</p>
+                </a>
+            </div>
+
+            <!-- Yeni logo -->
+            <div class="nicetomeetyou">
+                <img src="images/nicetomeetyou.svg" alt="Nice to Meet You Logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
